@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script scr="main.js" defer></script>
+    <title>FRC</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="brand">
+                    <img src="Images/7476 Lion Gold V2.png" height="70px" width="80px" style="padding-left: 10px;">
+                    
+                </div>
+                <div class="writing">
+                    <div style="color: #196F04;"> .</div>
+                    <div class="7476">
+                        <a style="font-family: montserratbold; font-size: 120%; ">7476</a>
+                    </div>
+
+                    <div class="eom_lions">
+                        <a style="font-family: montserratbold; font-size: 120%; ">EOM LIONS</a>
+
+                    </div>
+                </div>
+            </div> <!-- left side-->
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="#About-Us" style="font-family: montserratregular; font-size: 110%;">ABOUT</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#sponsors" style="font-size: 110%; font-family: montserratregular;">SPONSORS</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#Contact-Us" style="font-size: 110%; font-family: montserratregular;">CONTACT</a>
+                </div>
+            </div><!-- right side -->
+        </div> <!-- nav - wrapper-->
+
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <img src="Images/slide1.jpg" style="width: 600px; height: 420px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <img src="Images/slide2.jpg" style="width: 600px; height: 420px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="Images/slide_3.jpg" style="width: 600px; height: 420px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="Images/slide4.jpg" style="width: 600px; height: 420px;">
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var numSlides = 4;
+            var slideIndex = 0;
+
+            showSlides();
+
+            function showSlides() {
+                console.log("in");
+
+                var slides = document.getElementsByClassName("mySlides fade");
+                var dots = document.getElementsByClassName("dot");
+                for (var i = 0; i < numSlides; i++) {
+                    slides[i].style.display = "none";
+                    console.log("in loop" + i);
+                }
+                console.log("out loop");
+
+                console.log("slide index " + slideIndex);
+                if (slideIndex == numSlides) { slideIndex = 0; }
+                for (i = 0; i < numSlides; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slideIndex++;
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                console.log("ready to reset");
+                setTimeout(showSlides, 10000); // Change image every 10 seconds
+                console.log("refresh");
+            }
+
+        </script>
+
+        <!-- group -->
+        <div class="About-Us" id="About-Us">
+            <span style="font-family: 'montserratlight';"></span>
+            <h1 style="font-family: 'montserratbold'; text-align: center; padding-top:20px">About Us </h1>
+            <div class="about-us-text" style="text-align: center; ">
+                <div class="p1"
+                    style="width: 100%; font-family: 'montserratlight'; padding-left:60px; padding-right: 10px;">
+                    <h3 style="font-family: 'montserratlight'; padding-bottom: 10px;">Who are we?</h5>
+                        We are a group of 40-45 students at Earl of March Secondary School ranging from grades 9-12
+                        specialising in a wide range of subjects from sciences, to business, to tech, all excited at the
+                        prospect of competing a robot.
+                        <br>
+                        <br> We divide ourselves into 4 team; Mechanical, Electrical, Software and Admin allowing us to
+                        effectively cover all parts of building a robot and organising a team.
+                        <br>
+                        <br> Some of us will be returning to the team in the 2019/20 school year but the majority of us
+                        will
+                        be
+                        new members.
+                </div>
+                <div class="img">
+                    <img src="Images/group_north_bay.jpg"
+                        style="height: 230px; width: 380px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                </div>
+            </div>
+            <!--Rookie Year -->
+            <div class="About-Us" id="About-Us">
+                <span style="font-family: 'montserratlight';"></span>
+                <div class="about-us-text" style="text-align: center;">
+                    <div class="img">
+                        <img src="Images/rookie_year.jpg"
+                            style="height: 230px; width: 410px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    </div>
+                    <div class="p2"
+                        style="width: 100%; font-family: montserratlight; padding-right: 10px; padding-right: 60px;">
+                        <h3 style="font-family: 'montserratlight'; padding-bottom: 10px;">18/19 Rookie Year</h3>
+                        The 2018/19 school year was Earl of March's first year competing in the FIRST robotics
+                        competition.
+                        We managed to build a great robot in our dedicated 6 weeks, and competed in 3 competitions,
+                        making
+                        it as far as the regionals competition.
+                        <br>
+                        <br>We won the Entrepreneurship award in the Ryerson competition, the Rookie All-star and
+                        highest rookie
+                        seed in North bay, and Rookie Inspiration at the Ontario Provincials.
+                    </div>
+
+                </div>
+
+                <!-- FIRST -->
+                <div class="About-Us" id="About-Us">
+                    <span style="font-family: 'montserratlight';"></span>
+                    <div class="about-us-text" style="text-align: center;  padding-left: 20px;">
+                        <div class="p3"
+                            style="width: 100%; font-family: montserratlight; margin-left: 10px; padding-right: 60px;">
+                            <h3 style="font-family: 'montserratlight'; padding-bottom: 10px;">FIRST Robotics</h3>
+                            The FIRST robotics competition is an annual international competition for high school
+                            students. We
+                            are given specifications for a robot and a short window of time in which to design, build
+                            and test
+                            it. The robot then competes against other teams at competitions, where points are awarded
+                            for
+                            completing tasks and outperforming opponents
+                            <br>
+                            <br> Awards are also distributed for robot design, teamwork, creativity, passion, and many
+                            more.
+
+                            <br>
+                            <br> The robots design specifications change each year, providing new design, construction
+                            and piloting
+                            challenges.
+                        </div>
+                        <div class="img">
+                            <img src="Images/first.jpg"
+                                style="margin-right: 10px; height: 220px; width: 400px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="sponsors" class="sponsor-slideshow">
+                        <h1 style="font-family: montserratbold; text-align: center; padding-top: 20px;">Sponsors</h1>
+                        <div class="sponsor_text" style="text-align: center; font-family: montserratlight;">
+                            <br>
+                            But building a robot, and travelling to competitions is expensive, and would be impossible
+                            without the help of our amazing sponsors.
+                            <br>
+                            If you would like to help our team this year and be part of our success, we would love to
+                            hear from you.<br>
+                            <div style="font-family: montserratregular; text-align: center;">
+                                <br>
+                                We thank all of our 2018/19 sponsors, with whose invaluable support we were able to
+                                build
+                                our robot and compete across the province.
+                            </div>
+                        </div>
+                        <div class="box_1" style=" background-color: #092901; margin-top: 20px;">
+                            <div class="box_text">
+                                PLATINUM ($5000+)
+                            </div>
+                        </div>
+
+                        <div class="img-text-wrapper" style="height: 300px;">
+                            <div class="package">
+                                <h3>What's in your package?</h3>
+                                <br>
+                                Your name and logo displayed on the robot (X-Large) <br>
+                                <br>
+                                Your name and logo on the website<br>
+                                <br>
+                                Your names is presented on team merchandise (Large)<br>
+                                <br>
+                                Your name is included in team introduction<br>
+                                <br>
+                                Large logo or name on Sponsor Board (at competitions)<br>
+                                <br>
+                                Advertised at outreach events and official competitions (brochures, ect)
+                            </div>
+                            <div class="logo-wrapper">
+                                <img src="Images/uci.png" height="200" width="250" style="margin: 50px;">
+                            </div>
+
+                        </div>
+
+                        <div class="box_1" style="background-color: #0f4202;">
+                            <div class="box_text">
+                                GOLD ($2500 - $4999)
+                            </div>
+                        </div>
+                        <div class="img-text-wrapper" style="height: 400px;">
+                            <div class="package">
+                                <h3>What's in your package?</h3>
+                                <br>
+                                Your logo displayed on the robot (Large)<br>
+                                <br>
+                                The name or logo on the website<br>
+                                <br>
+                                Your name presented on our own team merchandise<br>
+                                <br>
+                                Medium sized name or logo on Sponsor Board (at competitions)<br>
+                                <br>
+                                Company Advertising at outreach events (brochures, ect.)
+                            </div>
+                            <div class="logo-wrapper">
+                                <img src="Images/ross.png" height="150" width="330">
+                                <img src="Images/cu.png" height="150" width="450">
+
+                            </div>
+
+                        </div>
+                        <div class="box_1" style="background-color: #145703;">
+                            <div class="box_text">
+                                SILVER ($1000 - $2499)
+                            </div>
+                        </div>
+
+
+                        <div class="img-text-wrapper" style="height: 150px;">
+                            <div class="package">
+                                <h3>What's in your package?</h3><br>
+                                The name displayed on the robot<br>
+                                <br>
+                                Your logo on the website<br>
+                                <br>
+                                Your name on Sponsor Board (at competitions)
+                            </div>
+                            <div class="logo-wrapper">
+                                Eastway
+                            </div>
+                        </div>
+
+                        <div class="box_1" style="background-color: #1a7004;">
+                            <div class="box_text">
+                                BRONZE ($500 - $999)
+                            </div>
+                        </div>
+
+
+                        <div class="img-text-wrapper" style="height: 150px">
+                            <div class="package">
+                                <h3>What's in your package?</h3><br>
+                                Your name on the website<br>
+                                <br>
+                                Your name on Sponsor Board (at competitions)
+                            </div>
+                            <div class="logo-wrapper">
+                                <br>
+                                Kumon Math and Reading Centre <br>
+                                <br>
+                                Protocase Inc <br>
+                                <br>
+                                Rotary Club of Kanata <br>
+                                <br>
+                                Epiphan Video <br>
+                                <br>
+                                ITBPC Consulting
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+
+
+                    <div id="Contact-Us" class="contact">
+                        <h1 style="font-family: montserratbold; text-align: center;">Contact Us</h1>
+                        <div class="logos">
+                            <div class="insta">
+                                <br>
+                                <a href="https://www.instagram.com/eomlions7476/">
+                                    <img alt="FRC" src="Images/instagram_logo.png" style="height: 80px; width: 80px;">
+                                </a>
+                                <h5
+                                    style="font-family: montserratlight; text-align: center;  padding-top: 30px; font-size: 110%">
+                                    <br>
+                                    Follow us on
+                                    Instagram</h5>
+                            </div>
+
+                            <div class="email">
+
+                                <br>
+
+                                <img alt="FRC" src="Images/email.png" style="height: 75px; width: 100px;">
+                                </a>
+                                <h5
+                                    style="font-family: montserratlight; text-align: center;  padding-top: 30px; font-size: 110%;">
+                                    <br>
+                                    Email us at eomlions@gmail.com</h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+</body>
+
+</html>
