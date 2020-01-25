@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <title>7476 EOM Lions</title>
+    <title>Email 7476 EOM Lions</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="static/css/home.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
-    <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
+    <link type="text/css" rel="stylesheet" href="static/css/email.css">
 </head>
 
 <body>
@@ -13,7 +12,7 @@
         <!-- Dropdown Structure -->
         <ul id="contact-dropdown" class="dropdown-content">
             <li class="green"><a target="_blank" href="https://www.instagram.com/eomlions7476/" class="yellow-text">Instagram</a></li>
-            <li class="green"><a href="email.html" class="yellow-text">Email</a></li>
+            <li class="green"><a class="yellow-text">Email</a></li>
         </ul>
         <!-- Main Navbar -->
         <div class="navbar-fixed">
@@ -27,7 +26,7 @@
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="active"><a href="#" class="yellow-text">Home</a></li>
+                        <li><a href="home.html" class="yellow-text">Home</a></li>
                         <li><a href="performance.html" class="yellow-text">Our performance</a></li>
                         <li><a href="help.html" class="yellow-text">How to Help</a></li>
                         <li><a class="dropdown-trigger yellow-text" data-target="contact-dropdown">Contact Us!<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -37,26 +36,19 @@
         </div>
         <!--Mobile Navbar-->
         <ul class="sidenav" id="mobile-demo">
-            <li><a class="active">Home</a></li>
+            <li><a class="active" href="#">Home</a></li>
             <li><a href="performance.html">Our performance</a></li>
             <li><a href="help.html">How to Help</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
         </ul>
-
-        <!--Slideshow-->
-        <div class="carousel carousel-slider">
-            <div class="left valign-wrapper sliders">
-                <a id="left-slider" class="btn-floating btn-large waves-effect waves-light N/A transparent" onclick="slide(-1)"><i class="material-icons">chevron_left</i></a>
+        <form action="mailto:fredliu876@gmail.com?Subject=Contact%207476&Body=Hi EOM Lions!" method="POST">
+            <div class="row valign-wrapper center-align message">
+                <button id="send" class="btn waves-effect waves-light blue" type="submit">Send
+                    <i class="material-icons right">send</i>
+                </button>
+                <label id="contact" class="green-text">&nbspus an email at eomlions@gmail.com!</label>
             </div>
-            <div class="right valign-wrapper sliders">
-                <a id="right-slider" class="btn-floating btn-large waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
-            </div>
-            <a class="carousel-item"><img src="static/images/slide0.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide1.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide2.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide3.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide4.jpg"></a>
-        </div>
+        </form>
     </div>
 
     <!--Scripts-->

@@ -1,0 +1,15 @@
+.sliders {
+    height: 100%;
+}
+#left-slider {
+    left: 10px !important;
+}
+#right-slider {
+    left: -10px !important;
+}
+#left-slider:hover {
+    background-color: darkcyan !important;
+}
+#right-slider:hover {
+    background-color: darkcyan !important;
+}

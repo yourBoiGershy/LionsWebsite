@@ -4,6 +4,11 @@
     vertical-align: middle !important;
 }
 
+#logo {
+    max-height: 70%;
+    width: auto;
+}
+
 #name-wrapper {
     width: auto;
     height: 70%;

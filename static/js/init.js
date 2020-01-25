@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     //Carousel init
     let carousel = document.querySelectorAll('.carousel')
     M.Carousel.init(carousel, {
-        numVisible:1,
         fullWidth:true,
-        indicators:true
+        indicators:true,
+        duration:100,
     })
 
     //Dropdown init
