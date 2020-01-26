@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
 </head>
 
-<body>
+<body onload="startAutoslide()">
     <div class="window">
         <!-- Dropdown Structure -->
         <ul id="contact-dropdown" class="dropdown-content">
@@ -27,7 +27,7 @@
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="active"><a href="#" class="yellow-text">Home</a></li>
+                        <li class="active"><a class="yellow-text">Home</a></li>
                         <li><a href="performance.html" class="yellow-text">Our performance</a></li>
                         <li><a href="help.html" class="yellow-text">How to Help</a></li>
                         <li><a class="dropdown-trigger yellow-text" data-target="contact-dropdown">Contact Us!<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -46,10 +46,10 @@
         <!--Slideshow-->
         <div class="carousel carousel-slider">
             <div class="left valign-wrapper sliders">
-                <a id="left-slider" class="btn-floating btn-large waves-effect waves-light N/A transparent" onclick="slide(-1)"><i class="material-icons">chevron_left</i></a>
+                <a id="left-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(-1)"><i class="material-icons">chevron_left</i></a>
             </div>
             <div class="right valign-wrapper sliders">
-                <a id="right-slider" class="btn-floating btn-large waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
+                <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
             </div>
             <a class="carousel-item"><img src="static/images/slide0.jpg"></a>
             <a class="carousel-item"><img src="static/images/slide1.jpg"></a>
@@ -58,7 +58,7 @@
             <a class="carousel-item"><img src="static/images/slide4.jpg"></a>
         </div>
     </div>
-
+    
     <!--Scripts-->
     <script type="text/javascript" src="static/js/materialize.min.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>

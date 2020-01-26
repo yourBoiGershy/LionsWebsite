@@ -7,9 +7,6 @@
 #right-slider {
     left: -10px !important;
 }
-#left-slider:hover {
-    background-color: darkcyan !important;
-}
-#right-slider:hover {
-    background-color: darkcyan !important;
+.btn-sliders:hover {
+    background-color: lightseagreen !important;
 }

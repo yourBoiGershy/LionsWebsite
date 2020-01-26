@@ -1,12 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     //Carousel init
-    let carousel = document.querySelectorAll('.carousel')
-    M.Carousel.init(carousel, {
+    let carousels = document.querySelectorAll('.carousel')
+    M.Carousel.init(carousels, {
         fullWidth:true,
-        indicators:true,
-        duration:100,
+        duration:100
     })
+
+    //Disable manual dragging to slide by removing event listeners for mouse actions
+    for(let i = 0; i < carousels.length; i++) {
+        let carouselInstance = M.Carousel.getInstance(carousels[i])
+
+        carousels[i].removeEventListener('mousedown', carouselInstance._handleCarouselTapBound);
+        carousels[i].removeEventListener('mousemove', carouselInstance._handleCarouselDragBound);
+        carousels[i].removeEventListener('mouseup', carouselInstance._handleCarouselReleaseBound);
+        carousels[i].removeEventListener('mouseleave', carouselInstance._handleCarouselReleaseBound);
+        carousels[i].removeEventListener('click', carouselInstance._handleCarouselClickBound);
+    }
 
     //Dropdown init
     let dropdown = document.querySelectorAll('.dropdown-trigger');
