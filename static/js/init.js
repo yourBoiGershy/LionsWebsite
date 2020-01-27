@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
     for(let i = 0; i < carousels.length; i++) {
         let carouselInstance = M.Carousel.getInstance(carousels[i])
 
-        carousels[i].removeEventListener('mousedown', carouselInstance._handleCarouselTapBound);
-        carousels[i].removeEventListener('mousemove', carouselInstance._handleCarouselDragBound);
-        carousels[i].removeEventListener('mouseup', carouselInstance._handleCarouselReleaseBound);
-        carousels[i].removeEventListener('mouseleave', carouselInstance._handleCarouselReleaseBound);
-        carousels[i].removeEventListener('click', carouselInstance._handleCarouselClickBound);
+        carousels[i].removeEventListener('mousedown', carouselInstance._handleCarouselTapBound)
+        carousels[i].removeEventListener('mousemove', carouselInstance._handleCarouselDragBound)
+        carousels[i].removeEventListener('mouseup', carouselInstance._handleCarouselReleaseBound)
+        carousels[i].removeEventListener('mouseleave', carouselInstance._handleCarouselReleaseBound)
+        carousels[i].removeEventListener('click', carouselInstance._handleCarouselClickBound)
     }
 
     //Dropdown init
-    let dropdown = document.querySelectorAll('.dropdown-trigger');
+    let dropdown = document.querySelectorAll('.dropdown-trigger')
     M.Dropdown.init(dropdown, {
         hover:true
     });
