@@ -1,12 +1,135 @@
+.carousel-item {
+    pointer-events: none;
+}
+
+
+
 .sliders {
     height: 100%;
 }
+
 #left-slider {
     left: 10px !important;
 }
+
 #right-slider {
     left: -10px !important;
 }
+
 .btn-sliders:hover {
     background-color: lightseagreen !important;
+}
+
+
+
+.staggered-list {
+    position: absolute;
+    top: 5rem;
+    right: 5%;
+    max-width: 25rem;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.text-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.staggered-list ul li div p {
+    width: 100%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: marcellus;
+    src: url(../fonts/MarcellusSC-Regular.ttf);
+}
+
+#title {
+    font-size: 2rem;
+    color: white;
+    font-family: marcellus;
+    padding: 1px 5px;
+}
+
+#subject {
+    font-size: 1.5rem;
+    color: white;
+    font-family: marcellus;
+    padding: 1px 5px;
+}
+
+#body {
+    font-size: 1.25rem;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px 5px;
+}
+
+.list-item {
+    display: block;
+}
+
+.staggered-list ul {
+    padding: 0;
+    display: block;
+    max-width: 100%;
+}
+
+.staggered-list li {
+    display: inline-block;
+    animation-duration: 350ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+#caption-title {
+    height: calc(2rem + 3px);
+    --animation-order: 1;
+    animation-name: animateInHeaders;
+    animation-delay: calc(var(--animation-order) * 100ms);
+}
+
+#caption-subject {
+    height: calc(1.5rem + 3px);
+    margin-top: 2px;
+    --animation-order: 2;
+    animation-name: animateInHeaders;
+    animation-delay: calc(var(--animation-order) * 200ms);
+}
+
+#caption-body {
+    height: 8rem;
+    max-width: 80%;
+    margin-top: 5rem;
+    --animation-order: 3;
+    animation-name: animateInText;
+    animation-delay: calc(var(--animation-order) * 400ms);
+}
+
+@keyframes animateInHeaders {
+    0% {
+        opacity: 0;
+        color: rgba(50, 205, 50, 0);
+        transform: scale(0.6) translateY(-8px);
+    }
+
+    100% {
+        opacity: 1;
+        background-color: rgba(50, 205, 50, 0.9);
+    }
+}
+
+@keyframes animateInText {
+    0% {
+        opacity: 0;
+        color: rgba(50, 205, 50, 0);
+        transform: scale(0.6) translateY(-8px);
+    }
+
+    100% {
+        opacity: 1;
+        background-color: rgba(213, 218, 213, 0.6);
+    }
 }

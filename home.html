@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="static/css/home.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
+    <link type="text/css" rel="stylesheet" href="static/css/general.css">
 </head>
 
 <body onload="startAutoslide()">
@@ -51,16 +52,30 @@
             <div class="right valign-wrapper sliders">
                 <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
             </div>
-            <a class="carousel-item"><img src="static/images/slide0.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide1.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide2.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide3.jpg"></a>
-            <a class="carousel-item"><img src="static/images/slide4.jpg"></a>
+            <a class="carousel-item select-disable"><img src="static/images/slide1.jpg"></a>
+            <a class="carousel-item select-disable"><img src="static/images/slide2.jpg"></a>
+            <a class="carousel-item select-disable"><img src="static/images/slide3.jpg"></a>
+            <!--
+            <a class="carousel-item select-disable"><img src="static/images/slide3.jpg"></a>
+            <a class="carousel-item select-disable"><img src="static/images/slide4.jpg"></a>-->
+        </div>
+        <div class="staggered-list select-disable">
+            <ul class="valign-wrapper">
+                <div class="list-item" id="title-wrapper">
+                    <li id="caption-title"><div class="valign-wrapper text-wrapper"><p id="title">Rookie of the year 2019!</p></div></li>
+                </div>
+                <div class="list-item" id="subject-wrapper">
+                    <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p id="subject">At North Bay District Event</p></div></li>
+                </div>
+                <div class="list-item" id="body-wrapper">
+                    <li id="caption-body"><div class="valign-wrapper text-wrapper"><p id="body">We are proud of making provincials last year and we are aiming for no less this year!</p></div></li>
+                </div>
+            </ul>
         </div>
     </div>
     
     <!--Scripts-->
     <script type="text/javascript" src="static/js/materialize.min.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>
-    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/carouselScripts.js"></script>
 </body>
