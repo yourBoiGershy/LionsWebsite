@@ -1,3 +1,5 @@
+var slideIndex;
+
 document.addEventListener('DOMContentLoaded', function() {
     
     //Carousel init
