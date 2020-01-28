@@ -88,7 +88,7 @@
     height: calc(2rem + 3px);
     --animation-order: 1;
     animation-name: animateInHeaders;
-    animation-delay: calc(var(--animation-order) * 100ms);
+    animation-delay: calc(var(--animation-order) * 100ms - 100ms);
 }
 
 #caption-subject {
@@ -96,7 +96,7 @@
     margin-top: 2px;
     --animation-order: 2;
     animation-name: animateInHeaders;
-    animation-delay: calc(var(--animation-order) * 200ms);
+    animation-delay: calc(var(--animation-order) * 200ms - 100ms);
 }
 
 #caption-body {
@@ -105,7 +105,7 @@
     margin-top: 5rem;
     --animation-order: 3;
     animation-name: animateInText;
-    animation-delay: calc(var(--animation-order) * 400ms);
+    animation-delay: calc(var(--animation-order) * 400ms - 100ms);
 }
 
 @keyframes animateInHeaders {

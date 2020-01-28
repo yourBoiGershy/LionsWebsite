@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let carousels = document.querySelectorAll('.carousel')
     M.Carousel.init(carousels, {
         fullWidth:true,
-        duration:100
+        duration:100,
+        onCycleTo: function (data) {
+            slideIndex = data.getAttribute('data-index')
+            console.log(slideIndex)
+        }
     })
 
     //Disable manual dragging to slide by removing event listeners for mouse actions
