@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //collapsible init
     let collapsible = document.querySelectorAll('.collapsible');
     M.Collapsible.init(collapsible, {
-        
+        inDuration: 1000,
+        accordion: false
     });
-
 })

@@ -11,7 +11,7 @@
 </head>
 
 <body onload="startAutoslide()">
-    <div class="window">
+    <div>
         <!-- Dropdown Structure -->
         <ul id="contact-dropdown" class="dropdown-content">
             <li class="green"><a target="_blank" href="https://www.instagram.com/eomlions7476/" class="yellow-text">Instagram</a></li>
@@ -74,13 +74,13 @@
                 <div class="staggered-list">
                     <ul class="valign-wrapper">
                         <div class="list-item" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Banff</p></div></li>
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">7476 REACHOUT</p></div></li>
                         </div>
                         <div class="list-item" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">A True Wild Canadian Adventure</p></div></li>
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">W.O.Mitchell Elementary School</p></div></li>
                         </div>
                         <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">A paradise in the Canadian Rockies, thousands of tourists flock here each year to see the mountains, glaciers and wildlife</p></div></li>
+                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">We want others to feel our passion. This was a one day event aiming to inspire young kids about the amazing STEM field.</p></div></li>
                         </div>
                     </ul>
                 </div>
@@ -101,28 +101,45 @@
                     </ul>
                 </div>
             </div>
+            <div class="carousel-item select-disable" data-index="3">
+                <img src="static/images/slide4.jpg">
+                <div class="staggered-list">
+                    <ul class="valign-wrapper">
+                        <div class="line" id="title-wrapper">
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Banff</p></div></li>
+                        </div>
+                        <div class="line" id="subject-wrapper">
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">A True Wild Canadian Adventure</p></div></li>
+                        </div>
+                        <div class="line" id="body-wrapper">
+                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">A paradise in the Canadian Rockies, thousands of tourists flock here each year to see the mountains, glaciers and wildlife</p></div></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="section white"">
+        <div class="section white">
             <div class="row container">
                 <h2 class="header section-header green-text">About Us</h2>
                 <p class="grey-text text-darken-3 lighten-3 body-text">We are a group of 40-45 students at Earl of March Secondary School ranging from grades 9-12 specialising in a wide range of subjects from sciences, to business, to tech, all excited at the prospect of competing a robot.</p>
             </div>
         </div>
-        <div>
-            <ul class="collapsible popout">
-                <li class="active">
-                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Our Awards</div>
-                    <div class="collapsible-body"><img class="materialboxed responsive-img" data-caption="Our lovely head of admin standing next to our plethora of awards" src="static/images/collapsible1.jpg"></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Our commitment to safety</div>
-                    <div class="collapsible-body"><img class="materialboxed responsive-img" data-caption="We are serious, safe students and never fool around" src="static/images/collapsible2.jpg"></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Our passion</div>
-                    <div class="collapsible-body"><img class="materialboxed responsive-img" data-caption="This is what we love to do, and we inspire others to reach for the same" src="static/images/collapsible3.jpg"></div>
-                </li>
-            </ul>
+        <div class="yellow lighten-2 center-align">
+            <div class="container center-align valign-wrapper">
+                <h2 class="header section-header">About FRC</h2>
+            </div>
+            <div style="width: 75%; margin: auto;">
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header yellow-text"><i class="material-icons">keyboard_arrow_right</i>What is FIRST robotics competition</div>
+                        <div class="collapsible-body center-align"><iframe src="https://www.youtube.com/embed/wSA6InzFAZE" allowfullscreen></iframe></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header yellow-text"><i class="material-icons">keyboard_arrow_right</i>This year's challenge</div>
+                        <div class="collapsible-body center-align"><iframe src="https://www.youtube.com/embed/gmiYWTmFRVE" allowfullscreen></iframe></div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     
@@ -130,4 +147,5 @@
     <script type="text/javascript" src="static/js/materialize.min.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>
     <script type="text/javascript" src="static/js/carouselScripts.js"></script>
+    <script type="text/javascript" src="static/js/collapsibleScripts.js"></script>
 </body>

@@ -1,5 +1,5 @@
 const numSlides = 3
-const autoplayDelay = 7000
+const autoplayDelay = 10000
 
 /**
  * Slides carousel from button click and disables buttons for a bit of time after

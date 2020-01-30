@@ -1,16 +1,22 @@
+.collapsible {
+    padding: 5%;
+}
+
 .collapsible-body .materialboxed {
     border-style: ridge;
 }
 
 .collapsible-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.5;
-    padding: 1rem;
-    background-color: rgb(30, 200, 30) !important;
-    border-bottom: 1px solid yellow !important;
+    background-color: rgb(11, 177, 11) !important;
+    border-bottom: 1px solid palegoldenrod !important;
+}
+
+.collapsible-header:hover {
+    background-color: rgb(5, 153, 5) !important;
+    color: gold;
+    border-bottom: 1px solid gold !important;
+}
+
+.collapsible-body {
+    background-color: palegoldenrod;
 }
