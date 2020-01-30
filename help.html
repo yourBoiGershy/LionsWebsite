@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>7476 EOM Lions</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="static/css/home.css">
+    <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
+    <link type="text/css" rel="stylesheet" href="static/css/general.css">
+</head>
+
+<body onload="startAutoslide()">
+    <div class="window">
+        <!-- Dropdown Structure -->
+        <ul id="contact-dropdown" class="dropdown-content">
+            <li class="green"><a target="_blank" href="https://www.instagram.com/eomlions7476/" class="yellow-text">Instagram</a></li>
+            <li class="green"><a href="email.html" class="yellow-text">Email</a></li>
+        </ul>
+        <!-- Main Navbar -->
+        <div class="navbar-fixed">
+            <nav class="green">
+                <div class="nav-wrapper">
+                    <a href="home.html" class="brand-logo yellow-text">
+                        <img id="logo" src="static/images/7476LionsGold.png">
+                        <div id="name-wrapper">
+                            <label id="name">7476 EOM Lions</label>
+                        </div>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="home.html" class="yellow-text">Home</a></li>
+                        <li><a href="performance.html" class="yellow-text">Our performance</a></li>
+                        <li class="active"><a class="yellow-text">How to Help</a></li>
+                        <li><a class="dropdown-trigger yellow-text" data-target="contact-dropdown">Contact Us!<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--Mobile Navbar-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="active">Home</a></li>
+            <li><a href="performance.html">Our performance</a></li>
+            <li><a href="help.html">How to Help</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+
+        <!--Slideshow-->
+        <div class="carousel carousel-slider">
+            <div class="left valign-wrapper sliders">
+                <a id="left-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(-1)"><i class="material-icons">chevron_left</i></a>
+            </div>
+            <div class="right valign-wrapper sliders">
+                <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
+            </div>
+            <div class="carousel-item select-disable" data-index="0">
+                <img src="static/images/Gold_Sponsors.jpg">
+            </div>
+            <div class="carousel-item select-disable" data-index="1">
+                <img src="static/images/Silver_Sponsors.jpg">
+            </div>
+            <div class="carousel-item select-disable" data-index="1">
+                <img src="static/images/Bronze_Sponsors.jpg">
+            </div>
+        </div>
+    </div>
+    
+    <!--Scripts-->
+    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    <script type="text/javascript" src="static/js/init.js"></script>
+    <script type="text/javascript" src="static/js/carouselScripts.js"></script>
+</body>
