@@ -10,22 +10,12 @@
 }
 
 #name-wrapper {
-    width: auto;
     height: 70%;
     display: inline-block;
     vertical-align: top;
 }
 
-@font-face {
-    font-family: marcellus;
-    src: url(../fonts/MarcellusSC-Regular.ttf);
-}
-
 #name {
-    padding-top: 0.5%;
     display: inline;
-    font-size: 3rem;
-    color: yellow;
-    font-family: marcellus;
     cursor: pointer;
 }

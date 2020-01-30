@@ -3,10 +3,11 @@
     <title>7476 EOM Lions</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="static/css/home.css">
+    <link type="text/css" rel="stylesheet" href="static/css/general.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
-    <link type="text/css" rel="stylesheet" href="static/css/general.css">
+    <link type="text/css" rel="stylesheet" href="static/css/collapsible.css">
+    <link type="text/css" rel="stylesheet" href="static/css/home.css">
 </head>
 
 <body onload="startAutoslide()">
@@ -18,12 +19,12 @@
         </ul>
         <!-- Main Navbar -->
         <div class="navbar-fixed">
-            <nav class="green darken-1">
+            <nav class="green">
                 <div class="nav-wrapper">
                     <a href="home.html" class="brand-logo yellow-text">
                         <img id="logo" src="static/images/7476LionsGold.png">
                         <div id="name-wrapper">
-                            <label id="name">7476 EOM Lions</label>
+                            <label class="section-header yellow-text" id="name">7476 EOM Lions</label>
                         </div>
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -52,18 +53,18 @@
             <div class="right valign-wrapper sliders">
                 <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
             </div>
-            <div class="carousel-item select-disable" data-index="0">
+            <div class="carousel-item" data-index="0">
                 <img src="static/images/slide1.jpg">
                 <div class="staggered-list">
                     <ul class="valign-wrapper">
                         <div class="list-item" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p id="title">Rookie of the year 2019!</p></div></li>
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Rookie of the year 2019!</p></div></li>
                         </div>
                         <div class="list-item" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p id="subject">North Bay District Event</p></div></li>
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">North Bay District Event</p></div></li>
                         </div>
                         <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p id="body">We are proud of making provincials last year and we are aiming for no less this year!</p></div></li>
+                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">We are proud of making provincials last year and we are aiming for no less this year!</p></div></li>
                         </div>
                     </ul>
                 </div>
@@ -73,13 +74,13 @@
                 <div class="staggered-list">
                     <ul class="valign-wrapper">
                         <div class="list-item" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p id="title">Banff</p></div></li>
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Banff</p></div></li>
                         </div>
                         <div class="list-item" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p id="subject">A True Wild Canadian Adventure</p></div></li>
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">A True Wild Canadian Adventure</p></div></li>
                         </div>
                         <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p id="body">A paradise in the Canadian Rockies, thousands of tourists flock here each year to see the mountains, glaciers and wildlife</p></div></li>
+                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">A paradise in the Canadian Rockies, thousands of tourists flock here each year to see the mountains, glaciers and wildlife</p></div></li>
                         </div>
                     </ul>
                 </div>
@@ -88,18 +89,40 @@
                 <img src="static/images/slide3.jpg">
                 <div class="staggered-list">
                     <ul class="valign-wrapper">
-                        <div class="list-item" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p id="title">Cape Breton</p></div></li>
+                        <div class="line" id="title-wrapper">
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Cape Breton</p></div></li>
                         </div>
-                        <div class="list-item" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p id="subject">& The Infamous Cabot Trail</p></div></li>
+                        <div class="line" id="subject-wrapper">
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">& The Infamous Cabot Trail</p></div></li>
                         </div>
-                        <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p id="body">Best seen during the fall, this ride along the small Nova Scotian island is breathtaking and is a one-of-a-kind adventure</p></div></li>
+                        <div class="line" id="body-wrapper">
+                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">Best seen during the fall, this ride along the small Nova Scotian island is breathtaking and is a one-of-a-kind adventure</p></div></li>
                         </div>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="section white"">
+            <div class="row container">
+                <h2 class="header section-header green-text">About Us</h2>
+                <p class="grey-text text-darken-3 lighten-3 body-text">We are a group of 40-45 students at Earl of March Secondary School ranging from grades 9-12 specialising in a wide range of subjects from sciences, to business, to tech, all excited at the prospect of competing a robot.</p>
+            </div>
+        </div>
+        <div>
+            <ul class="collapsible popout">
+                <li class="active">
+                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Our Awards</div>
+                    <div class="collapsible-body"><img class="materialboxed responsive-img" data-caption="Our lovely head of admin standing next to our plethora of awards" src="static/images/collapsible1.jpg"></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Our commitment to safety</div>
+                    <div class="collapsible-body"><img class="materialboxed responsive-img" data-caption="We are serious, safe students and never fool around" src="static/images/collapsible2.jpg"></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Our passion</div>
+                    <div class="collapsible-body"><img class="materialboxed responsive-img" data-caption="This is what we love to do, and we inspire others to reach for the same" src="static/images/collapsible3.jpg"></div>
+                </li>
+            </ul>
         </div>
     </div>
     

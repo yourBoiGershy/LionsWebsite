@@ -17,17 +17,16 @@
 }
 
 .btn-sliders:hover {
-    background-color: lightseagreen !important;
+    background-color: rgb(23, 177, 23) !important;
 }
 
 
 
 .staggered-list {
     position: absolute;
-    top: 5rem;
+    top: 2rem;
     right: 5%;
     max-width: 25rem;
-    z-index: 0;
     pointer-events: none;
 }
 
@@ -39,36 +38,6 @@
 .staggered-list ul li div p {
     width: 100%;
     text-align: center;
-}
-
-@font-face {
-    font-family: marcellus;
-    src: url(../fonts/MarcellusSC-Regular.ttf);
-}
-
-#title {
-    font-size: 2rem;
-    color: white;
-    font-family: marcellus;
-    padding: 1px 5px;
-}
-
-#subject {
-    font-size: 1.5rem;
-    color: white;
-    font-family: marcellus;
-    padding: 1px 5px;
-}
-
-#body {
-    font-size: 1.25rem;
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0px 5px;
-}
-
-.list-item {
-    display: block;
 }
 
 .staggered-list ul {
@@ -108,6 +77,8 @@
     animation-delay: calc(var(--animation-order) * 400ms - 100ms);
 }
 
+
+
 @keyframes animateInHeaders {
     0% {
         opacity: 0;
@@ -117,7 +88,7 @@
 
     100% {
         opacity: 1;
-        background-color: rgba(50, 205, 50, 0.9);
+        background-color: rgba(30, 189, 30, 0.9);
     }
 }
 
@@ -130,6 +101,6 @@
 
     100% {
         opacity: 1;
-        background-color: rgba(213, 218, 213, 0.6);
+        background-color: rgba(213, 218, 213, 0.7);
     }
 }

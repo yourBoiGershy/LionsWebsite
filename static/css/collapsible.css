@@ -1,0 +1,16 @@
+.collapsible-body .materialboxed {
+    border-style: ridge;
+}
+
+.collapsible-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: rgb(30, 200, 30) !important;
+    border-bottom: 1px solid yellow !important;
+}

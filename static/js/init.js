@@ -30,9 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
         hover:true
     });
 
+    //sidenav init
     let mobile = document.querySelectorAll('.sidenav')
     M.Sidenav.init(mobile, {
 
     })
+
+    //material box init
+    let materialBox = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(materialBox, {
+
+    })
+
+    //collapsible init
+    let collapsible = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsible, {
+        
+    });
 
 })
