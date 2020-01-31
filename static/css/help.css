@@ -1,3 +1,17 @@
+.section {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.sponsors-text {
+    padding-top: 1rem;
+    display: block;
+}
+
+.contact-us {
+    margin-top: 1rem;
+}
+
 .fixed-btn-wrapper {
     position: absolute;
     width: 100%;
