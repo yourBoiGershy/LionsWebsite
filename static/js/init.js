@@ -24,10 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
         carousels[i].removeEventListener('click', carouselInstance._handleCarouselClickBound)
     }
 
-    //Dropdown init
-    let dropdown = document.querySelectorAll('.dropdown-trigger')
-    M.Dropdown.init(dropdown, {
-        hover:true
+    //Nav dropdown init
+    let navDropdown = document.querySelectorAll('.nav-dropdown-trigger')
+    M.Dropdown.init(navDropdown, {
+        hover: true,
+        coverTrigger: false
     });
 
     //sidenav init
@@ -54,4 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Modal.init(modal, {
 
     })
+
+    //Search dropdown init
+    let dropdown = document.querySelectorAll('.year-dropdown-trigger')
+    M.Dropdown.init(dropdown, {
+        hover: false,
+        coverTrigger: false
+    });
 })

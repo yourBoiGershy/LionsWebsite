@@ -6,7 +6,6 @@
     <link type="text/css" rel="stylesheet" href="static/css/general.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
-    <link type="text/css" rel="stylesheet" href="static/css/collapsible.css">
 </head>
 
 <body onload="startAutoslide()">
@@ -28,8 +27,8 @@
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="active"><a class="yellow-text">Home</a></li>
-                        <li><a href="performance.html" class="yellow-text">Our performance</a></li>
+                        <li><a class="yellow-text" href="home.html">Home</a></li>
+                        <li class="active"><a class="yellow-text">Our performance</a></li>
                         <li><a href="help.html" class="yellow-text">How to Help</a></li>
                         <li><a class="dropdown-trigger yellow-text nav-dropdown-trigger" data-target="contact-dropdown">Contact Us!<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
@@ -38,10 +37,20 @@
         </div>
         <!--Mobile Navbar-->
         <ul class="sidenav" id="mobile-demo">
-            <li><a>Home</a></li>
-            <li><a href="performance.html">Our performance</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a>Our performance</a></li>
             <li><a href="help.html">How to Help</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-trigger btn year-dropdown-trigger' href='#' data-target='year-dropdown'>Find a year</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='year-dropdown' class='dropdown-content'>
+            <li><a href="#19-20">19-20</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#18-19">18-19</a></li>
         </ul>
 
         <!--Slideshow-->
@@ -117,37 +126,12 @@
                 </div>
             </div>
         </div>
-        <div class="section white">
-            <div class="row container">
-                <h2 class="header section-header green-text">About Us</h2>
-                <p class="grey-text text-darken-3 lighten-3 body-text">We are a group of 40-45 students at Earl of March Secondary School ranging from grades 9-12 specialising in a wide range of subjects from sciences, to business, to tech, all excited at the prospect of competing a robot.</p>
-            </div>
-        </div>
-        <div class="yellow lighten-2 center-align">
-            <div class="container center-align valign-wrapper">
-                <h2 class="header section-header">About FRC</h2>
-            </div>
-            <div style="width: 75%; margin: auto;">
-                <ul class="collapsible popout">
-                    <li>
-                        <div class="collapsible-header yellow-text"><i class="material-icons">keyboard_arrow_right</i>What is FIRST robotics competition</div>
-                        <div class="collapsible-body center-align"><iframe src="https://www.youtube.com/embed/wSA6InzFAZE" allowfullscreen></iframe></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header yellow-text"><i class="material-icons">keyboard_arrow_right</i>This year's challenge</div>
-                        <div class="collapsible-body center-align"><iframe src="https://www.youtube.com/embed/gmiYWTmFRVE" allowfullscreen></iframe></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-    
     <!--Scripts-->
     <script type="text/javascript" src="static/js/materialize.min.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>
     <script type="text/javascript" src="static/js/carouselScripts.js"></script>
-    <script type="text/javascript" src="static/js/collapsibleScripts.js"></script>
     <script>
-        let numSlides = 3
+        let numSlides = 2
     </script>
 </body>
