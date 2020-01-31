@@ -3,14 +3,15 @@
     <title>7476 EOM Lions</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="static/css/home.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
     <link type="text/css" rel="stylesheet" href="static/css/general.css">
+    <link type="text/css" rel="stylesheet" href="static/css/help.css">
+    <link type="text/css" rel="stylesheet" href="static/css/modals.css">
 </head>
 
-<body onload="startAutoslide()">
-    <div class="window">
+<body>
+    <div>
         <!-- Dropdown Structure -->
         <ul id="contact-dropdown" class="dropdown-content">
             <li class="green"><a target="_blank" href="https://www.instagram.com/eomlions7476/" class="yellow-text">Instagram</a></li>
@@ -23,7 +24,7 @@
                     <a href="home.html" class="brand-logo yellow-text">
                         <img id="logo" src="static/images/7476LionsGold.png">
                         <div id="name-wrapper">
-                            <label id="name">7476 EOM Lions</label>
+                            <label class="section-header yellow-text" id="name">7476 EOM Lions</label>
                         </div>
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -38,29 +39,133 @@
         </div>
         <!--Mobile Navbar-->
         <ul class="sidenav" id="mobile-demo">
-            <li><a class="active">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="performance.html">Our performance</a></li>
-            <li><a href="help.html">How to Help</a></li>
+            <li><a>How to Help</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
         </ul>
 
         <!--Slideshow-->
         <div class="carousel carousel-slider">
+            <div class="fixed-btn-wrapper center-align">
+                <a class="waves-effect waves-light btn modal-trigger carousel-fixed-btn yellow darken-2" href="#selected-package">What's in your package?</a>
+            </div>
             <div class="left valign-wrapper sliders">
-                <a id="left-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(-1)"><i class="material-icons">chevron_left</i></a>
+                <a id="left-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(-1), updateModals()"><i class="material-icons black-text">chevron_left</i></a>
             </div>
             <div class="right valign-wrapper sliders">
-                <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1)"><i class="material-icons">chevron_right</i></a>
+                <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1), updateModals()"><i class="material-icons black-text">chevron_right</i></a>
             </div>
-            <div class="carousel-item select-disable" data-index="0">
-                <img src="static/images/Gold_Sponsors.jpg">
+            <div class="carousel-item select-disable center-align" data-index="0">
+                <img class="sponsors-image" src="static/images/Gold_Sponsors.jpg">
+                <div class="staggered-list center-staggered-list">
+                    <ul class="valign-wrapper">
+                        <div class="list-item" id="title-wrapper">
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Platinum Sponsors</p></div></li>
+                        </div>
+                        <div class="list-item" id="subject-wrapper">
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$5000+</p></div></li>
+                        </div>
+                    </ul>
+                </div>
             </div>
-            <div class="carousel-item select-disable" data-index="1">
-                <img src="static/images/Silver_Sponsors.jpg">
+            <div class="carousel-item select-disable center-align" data-index="1">
+                <img class="sponsors-image" src="static/images/Gold_Sponsors.jpg">
+                <div class="staggered-list center-staggered-list">
+                    <ul class="valign-wrapper">
+                        <div class="list-item" id="title-wrapper">
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Gold Sponsors</p></div></li>
+                        </div>
+                        <div class="list-item" id="subject-wrapper">
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$2500 - $4999</p></div></li>
+                        </div>
+                    </ul>
+                </div>
             </div>
-            <div class="carousel-item select-disable" data-index="1">
-                <img src="static/images/Bronze_Sponsors.jpg">
+            <div class="carousel-item select-disable center-align" data-index="2">
+                <img class="sponsors-image" src="static/images/Silver_Sponsors.jpg">
+                <div class="staggered-list center-staggered-list">
+                    <ul class="valign-wrapper">
+                        <div class="list-item" id="title-wrapper">
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Silver Sponsors</p></div></li>
+                        </div>
+                        <div class="list-item" id="subject-wrapper">
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$1000 - $2499</p></div></li>
+                        </div>
+                    </ul>
+                </div>
             </div>
+            <div class="carousel-item select-disable center-align" data-index="3">
+                <img class="sponsors-image" src="static/images/Bronze_Sponsors.jpg">
+                <div class="staggered-list center-staggered-list">
+                    <ul class="valign-wrapper">
+                        <div class="list-item" id="title-wrapper">
+                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Bronze Sponsors</p></div></li>
+                        </div>
+                        <div class="list-item" id="subject-wrapper">
+                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$500 - $999</p></div></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structures -->
+    <div id="selected-package" class="modal package">
+        <div class="modal-content">
+            <h4 class="header section-header green-text">Your Package(Plat)</h4>
+            <div class="package-information">
+                <label class="sponsor-perk">Name and logo displayed on robot(X-Large)</label>
+                <label class="sponsor-perk">Name and logo on website</label class="sponsor-perk">
+                <label class="sponsor-perk">Names on team merchandise(Large)</label class="sponsor-perk">
+                <label class="sponsor-perk">Name included in team introduction</label class="sponsor-perk">
+                <label class="sponsor-perk">Logo or name on Sponsor Board at competitions(Large)</label class="sponsor-perk">
+                <label class="sponsor-perk">Advertised at outreach events and competitions</label class="sponsor-perk">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">done</i></a>
+        </div>
+    </div>
+    <div id="package1" class="modal package">
+        <div class="modal-content">
+            <h4 class="header section-header green-text">Your Package(Gold)</h4>
+            <div class="package-information">
+                <label class="sponsor-perk">Name and logo displayed on robot(Large)</label class="sponsor-perk">
+                <label class="sponsor-perk">Name and logo on website</label class="sponsor-perk">
+                <label class="sponsor-perk">Names on team merchandise(Medium)</label class="sponsor-perk">
+                <label class="sponsor-perk">Logo or name on Sponsor Board at competitions</label class="sponsor-perk">
+                <label class="sponsor-perk">Advertised at outreach events</label class="sponsor-perk">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">done</i></a>
+        </div>
+    </div>
+    <div id="package2" class="modal package">
+        <div class="modal-content">
+            <h4 class="header section-header green-text">Your Package(Silver)</h4>
+            <div class="package-information">
+                <label class="sponsor-perk">Name displayed on robot</label class="sponsor-perk">
+                <label class="sponsor-perk">Logo on website</label class="sponsor-perk">
+                <label class="sponsor-perk">Name on Sponsor Board at competitions</label class="sponsor-perk">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">done</i></a>
+        </div>
+    </div>
+    <div id="package3" class="modal package">
+        <div class="modal-content">
+            <h4 class="header section-header green-text">Your Package(Bronze)</h4>
+            <div class="package-information">
+                <label class="sponsor-perk">Name on website</label class="sponsor-perk">
+                <label class="sponsor-perk">Name on Sponsor Board at competitions</label class="sponsor-perk">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat"><i class="material-icons">done</i></a>
         </div>
     </div>
     
@@ -68,4 +173,7 @@
     <script type="text/javascript" src="static/js/materialize.min.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>
     <script type="text/javascript" src="static/js/carouselScripts.js"></script>
+    <script>
+        let numSlides = 4
+    </script>
 </body>

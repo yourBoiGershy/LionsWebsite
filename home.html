@@ -7,7 +7,6 @@
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
     <link type="text/css" rel="stylesheet" href="static/css/collapsible.css">
-    <link type="text/css" rel="stylesheet" href="static/css/home.css">
 </head>
 
 <body onload="startAutoslide()">
@@ -39,7 +38,7 @@
         </div>
         <!--Mobile Navbar-->
         <ul class="sidenav" id="mobile-demo">
-            <li><a class="active">Home</a></li>
+            <li><a>Home</a></li>
             <li><a href="performance.html">Our performance</a></li>
             <li><a href="help.html">How to Help</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
@@ -55,7 +54,7 @@
             </div>
             <div class="carousel-item" data-index="0">
                 <img src="static/images/slide1.jpg">
-                <div class="staggered-list">
+                <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
                         <div class="list-item" id="title-wrapper">
                             <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Rookie of the year 2019!</p></div></li>
@@ -71,7 +70,7 @@
             </div>
             <div class="carousel-item select-disable" data-index="1">
                 <img src="static/images/slide2.jpg">
-                <div class="staggered-list">
+                <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
                         <div class="list-item" id="title-wrapper">
                             <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">7476 REACHOUT</p></div></li>
@@ -80,14 +79,14 @@
                             <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">W.O.Mitchell Elementary School</p></div></li>
                         </div>
                         <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">We want others to feel our passion. This was a one day event aiming to inspire young kids about the amazing STEM field.</p></div></li>
+                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">We want others to feel our passion. This was a one day event to inspire young kids about the amazing STEM field.</p></div></li>
                         </div>
                     </ul>
                 </div>
             </div>
             <div class="carousel-item select-disable" data-index="2">
                 <img src="static/images/slide3.jpg">
-                <div class="staggered-list">
+                <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
                         <div class="line" id="title-wrapper">
                             <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Cape Breton</p></div></li>
@@ -103,7 +102,7 @@
             </div>
             <div class="carousel-item select-disable" data-index="3">
                 <img src="static/images/slide4.jpg">
-                <div class="staggered-list">
+                <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
                         <div class="line" id="title-wrapper">
                             <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Banff</p></div></li>
@@ -148,4 +147,7 @@
     <script type="text/javascript" src="static/js/init.js"></script>
     <script type="text/javascript" src="static/js/carouselScripts.js"></script>
     <script type="text/javascript" src="static/js/collapsibleScripts.js"></script>
+    <script>
+        let numSlides = 3
+    </script>
 </body>

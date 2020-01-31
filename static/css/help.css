@@ -1,0 +1,13 @@
+.fixed-btn-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-fixed-btn {
+    top: 48%;
+}
+
+.sponsors-image {
+    opacity: 0.6;
+}

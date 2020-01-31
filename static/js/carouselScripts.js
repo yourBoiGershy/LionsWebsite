@@ -1,19 +1,39 @@
-const numSlides = 3
 const autoplayDelay = 10000
+
+/**
+ * Helper function to add to slide index
+ */
+function addSlideIndex() {
+    slideIndex++
+    if(slideIndex >= numSlides) {
+        slideIndex = 0
+    }
+}
+
+/**
+ * Helper function to subtract to slide index
+ */
+function subtractSlideIndex() {
+    slideIndex--
+    if(slideIndex < 0) {
+        slideIndex = numSlides-1
+    }
+}
 
 /**
  * Slides carousel from button click and disables buttons for a bit of time after
  * @param {int} option
  * option determines which way to slide 
  */
-
 function slide(option) {
     //slide carousel using buttons
     let homeCarousel = M.Carousel.getInstance(document.querySelector('.carousel'))
     if (option == 1) {
         homeCarousel.next()
+        addSlideIndex()
     } else {
         homeCarousel.prev()
+        subtractSlideIndex()
     }
     reloadStaggerList()
 
@@ -22,6 +42,7 @@ function slide(option) {
     for (let i = 0; i < sliderButtons.length; i++) {
         sliderButtons[i].className = sliderButtons[i].className.concat(' disabled')
     }
+    
     setTimeout(function() {
         for (let i = 0; i < sliderButtons.length; i++) {
             sliderButtons[i].className = sliderButtons[i].className.substring(0, sliderButtons[i].className.length-9)
@@ -66,8 +87,8 @@ function autoslide(time, carouselInstance, autoplaySlideIndex) {
         autoplaySlideIndex = slideIndex
         time = 0
     } else if (time >= autoplayDelay) {//autoslide
-        
         carouselInstance.next()
+        addSlideIndex()
         reloadStaggerList()
 
         autoplaySlideIndex = slideIndex
@@ -79,4 +100,18 @@ function autoslide(time, carouselInstance, autoplaySlideIndex) {
     setTimeout(function() {
         autoslide(time+increment, carouselInstance, autoplaySlideIndex)
     }, increment)
+}
+
+/**
+ * Use new set of modals for a new slide
+ */
+function updateModals() {
+    let allModals = document.querySelectorAll('.package')
+    for(let i = 0; i < allModals.length; i++) {
+        if(allModals[i].id == 'selected-package'){
+            allModals[i].id = 'package' + i
+        } else if(i == slideIndex) {
+            allModals[i].id = 'selected-package'
+        }
+    }
 }

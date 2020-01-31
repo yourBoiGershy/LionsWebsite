@@ -1,4 +1,4 @@
-var slideIndex;
+var slideIndex = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -48,4 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         inDuration: 1000,
         accordion: false
     });
+
+    //modal init
+    let modal = document.querySelectorAll('.modal')
+    M.Modal.init(modal, {
+
+    })
 })

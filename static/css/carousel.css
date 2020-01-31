@@ -24,10 +24,20 @@
 
 .staggered-list {
     position: absolute;
-    top: 2rem;
-    right: 5%;
+    top: 2rem;  
     max-width: 25rem;
     pointer-events: none;
+}
+
+.right-staggered-list {
+    right: 5%;
+}
+
+.center-staggered-list {
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 1rem !important;
 }
 
 .text-wrapper {
@@ -35,7 +45,7 @@
     height: 100%;
 }
 
-.staggered-list ul li div p {
+.staggered-list ul li div {
     width: 100%;
     text-align: center;
 }
@@ -74,7 +84,7 @@
     margin-top: 5rem;
     --animation-order: 3;
     animation-name: animateInText;
-    animation-delay: calc(var(--animation-order) * 400ms - 100ms);
+    animation-delay: calc(var(--animation-order) * 350ms - 100ms);
 }
 
 
