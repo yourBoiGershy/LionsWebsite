@@ -119,4 +119,5 @@ function updateModals() {
 function setSlide(selectedSlideIndex) {
     let homeCarousel = M.Carousel.getInstance(document.querySelector('.carousel'))
     homeCarousel.set(selectedSlideIndex)
+    reloadStaggerList()
 }
