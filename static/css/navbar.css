@@ -10,12 +10,13 @@
 }
 
 #name-wrapper {
-    height: 70%;
-    display: inline-block;
-    vertical-align: top;
+    height: 50%;
+    text-align: left;
+    display: block;
 }
 
-#name {
-    display: inline;
+.name {
+    font-size: 1.5rem !important;
+    font-family: marcellus;
     cursor: pointer;
 }

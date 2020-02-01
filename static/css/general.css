@@ -54,3 +54,11 @@
     width: 50%;
     height: auto;
 }
+
+.point {
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    margin-top: 1%;
+}

@@ -6,9 +6,10 @@
     <link type="text/css" rel="stylesheet" href="static/css/general.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
+    <link type="text/css" rel="stylesheet" href="static/css/performance.css">
 </head>
 
-<body onload="startAutoslide()">
+<body>
     <div>
         <!-- Dropdown Structure -->
         <ul id="contact-dropdown" class="dropdown-content">
@@ -43,18 +44,20 @@
             <li><a href="contact.html">Contact Us!</a></li>
         </ul>
 
-        <!-- Dropdown Trigger -->
-        <a class='dropdown-trigger btn year-dropdown-trigger' href='#' data-target='year-dropdown'>Find a year</a>
+        <div class="section center-align dropdown-section">
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn year-dropdown-trigger' href='#' data-target='year-dropdown'>Find a year</a>
+        </div>
 
         <!-- Dropdown Structure -->
         <ul id='year-dropdown' class='dropdown-content'>
-            <li><a href="#19-20">19-20</a></li>
+            <li><a href="#sponsor-carousel" onclick="setSlide(0)">19-20</a></li>
             <li class="divider" tabindex="-1"></li>
-            <li><a href="#18-19">18-19</a></li>
+            <li><a href="#sponsor-carousel" onclick="setSlide(1)">18-19</a></li>
         </ul>
 
         <!--Slideshow-->
-        <div class="carousel carousel-slider">
+        <div class="carousel carousel-slider" id="sponsor-carousel">
             <div class="left valign-wrapper sliders">
                 <a id="left-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(-1)"><i class="material-icons">chevron_left</i></a>
             </div>
@@ -65,14 +68,17 @@
                 <img src="static/images/slide1.jpg">
                 <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
-                        <div class="list-item" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Rookie of the year 2019!</p></div></li>
+                        <div>
+                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Working Away Fiercely!</p></div></li>
                         </div>
-                        <div class="list-item" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">North Bay District Event</p></div></li>
+                        <div>
+                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">2019-2020</p></div></li>
                         </div>
-                        <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">We are proud of making provincials last year and we are aiming for no less this year!</p></div></li>
+                        <div>
+                            <li class="caption-subject seperation" style="--animation-order: 4 !important;"><div class="valign-wrapper text-wrapper"><p class="title-text">Our Results:</p></li>
+                        </div>
+                        <div>
+                            <li class="caption-subject" style="--animation-order: 5 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Not yet available</p></div></li>
                         </div>
                     </ul>
                 </div>
@@ -81,46 +87,61 @@
                 <img src="static/images/slide2.jpg">
                 <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
-                        <div class="list-item" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">7476 REACHOUT</p></div></li>
+                        <div>
+                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Our Rookie Year!</p></div></li>
                         </div>
-                        <div class="list-item" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">W.O.Mitchell Elementary School</p></div></li>
+                        <div>
+                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">2018 - 2019</p></div></li>
                         </div>
-                        <div class="list-item" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">We want others to feel our passion. This was a one day event to inspire young kids about the amazing STEM field.</p></div></li>
+                        <div>
+                            <li class="caption-subject seperation" style="--animation-order: 4 !important;"><div class="valign-wrapper text-wrapper"><p class="title-text">Our Results:</p></li>
+                        </div>
+                        <div>
+                            <li class="caption-subject" style="--animation-order: 5 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Entrepreneurship Award at Ryerson</p></div></li>
+                            <li class="caption-subject" style="--animation-order: 6 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Rookie All-Star</p></div></li>
+                            <li class="caption-subject" style="--animation-order: 7 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Highest Seeded Rookie in Ontario</p></div></li>
+                            <li class="caption-subject" style="--animation-order: 8 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Rookie Inspiration at Ontario Provincials</p></div></li>
                         </div>
                     </ul>
                 </div>
             </div>
-            <div class="carousel-item select-disable" data-index="2">
-                <img src="static/images/slide3.jpg">
+            <div class="carousel-item" data-index="2">
+                <img src="static/images/slide1.jpg">
                 <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
-                        <div class="line" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Cape Breton</p></div></li>
+                        <div>
+                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Working Away Fiercely!</p></div></li>
                         </div>
-                        <div class="line" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">& The Infamous Cabot Trail</p></div></li>
+                        <div>
+                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">2019-2020</p></div></li>
                         </div>
-                        <div class="line" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">Best seen during the fall, this ride along the small Nova Scotian island is breathtaking and is a one-of-a-kind adventure</p></div></li>
+                        <div>
+                            <li class="caption-subject seperation" style="--animation-order: 4 !important;"><div class="valign-wrapper text-wrapper"><p class="title-text">Our Results:</p></li>
+                        </div>
+                        <div>
+                            <li class="caption-subject" style="--animation-order: 5 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Not yet available</p></div></li>
                         </div>
                     </ul>
                 </div>
             </div>
             <div class="carousel-item select-disable" data-index="3">
-                <img src="static/images/slide4.jpg">
+                <img src="static/images/slide2.jpg">
                 <div class="staggered-list right-staggered-list">
                     <ul class="valign-wrapper">
-                        <div class="line" id="title-wrapper">
-                            <li id="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Banff</p></div></li>
+                        <div>
+                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Our Rookie Year!</p></div></li>
                         </div>
-                        <div class="line" id="subject-wrapper">
-                            <li id="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">A True Wild Canadian Adventure</p></div></li>
+                        <div>
+                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">2018 - 2019</p></div></li>
                         </div>
-                        <div class="line" id="body-wrapper">
-                            <li id="caption-body"><div class="valign-wrapper text-wrapper"><p class="body-text">A paradise in the Canadian Rockies, thousands of tourists flock here each year to see the mountains, glaciers and wildlife</p></div></li>
+                        <div>
+                            <li class="caption-subject seperation" style="--animation-order: 4 !important;"><div class="valign-wrapper text-wrapper"><p class="title-text">Our Results:</p></li>
+                        </div>
+                        <div>
+                            <li class="caption-subject" style="--animation-order: 5 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Entrepreneurship Award at Ryerson</p></div></li>
+                            <li class="caption-subject" style="--animation-order: 6 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Rookie All-Star</p></div></li>
+                            <li class="caption-subject" style="--animation-order: 7 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Highest Seeded Rookie in Ontario</p></div></li>
+                            <li class="caption-subject" style="--animation-order: 8 !important;"><div class="valign-wrapper text-wrapper"><p class="body-text">Rookie Inspiration at Ontario Provincials</p></div></li>
                         </div>
                     </ul>
                 </div>
