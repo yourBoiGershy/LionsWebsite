@@ -10,6 +10,7 @@
 
 .contact-us {
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 .fixed-btn-wrapper {
@@ -20,6 +21,7 @@
 
 .carousel-fixed-btn {
     top: 48%;
+    cursor: pointer;
 }
 
 .sponsors-image {
