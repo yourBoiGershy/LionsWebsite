@@ -62,3 +62,11 @@
     font-size: 1rem;
     margin-top: 1%;
 }
+
+.footer-links {
+    text-decoration: underline;
+}
+
+.footer-links:hover {
+    color: lightgreen;
+}
