@@ -2,21 +2,49 @@
     pointer-events: none;
 }
 
-
-
-.sliders {
+.custom-left-button-wrapper {
+    position: absolute;
+    left: 0px;
     height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10000;
 }
 
-#left-slider {
+.custom-left-button-wrapper a {
     left: 10px !important;
 }
 
-#right-slider {
-    left: -10px !important;
+.custom-left-button-wrapper a:hover {
+    background-color: rgb(23, 177, 23) !important;
 }
 
-.btn-sliders:hover {
+.custom-right-button-wrapper {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10000;
+}
+
+.custom-right-button-wrapper a {
+    right: 10px !important;
+}
+
+.custom-right-button-wrapper a:hover {
     background-color: rgb(23, 177, 23) !important;
 }
 
@@ -25,7 +53,7 @@
 .staggered-list {
     position: absolute;
     top: 2rem;  
-    max-width: 25rem;
+    max-width: 28rem;
     pointer-events: none;
 }
 
@@ -54,6 +82,7 @@
     padding: 0;
     display: block;
     max-width: 100%;
+    text-align: center;
 }
 
 .staggered-list li {
@@ -67,7 +96,7 @@
     height: calc(2rem + 3px);
     --animation-order: 1;
     animation-name: animateInHeaders;
-    animation-delay: calc(var(--animation-order) * 100ms - 100ms);
+    animation-delay: calc(var(--animation-order) * 300ms);
 }
 
 .caption-subject {
@@ -75,7 +104,7 @@
     margin-top: 2px;
     --animation-order: 2;
     animation-name: animateInHeaders;
-    animation-delay: calc(var(--animation-order) * 200ms - 100ms);
+    animation-delay: calc(var(--animation-order) * 350ms);
 }
 
 .caption-body {
@@ -84,7 +113,7 @@
     margin-top: 5rem;
     --animation-order: 3;
     animation-name: animateInText;
-    animation-delay: calc(var(--animation-order) * 350ms - 100ms);
+    animation-delay: calc(var(--animation-order) * 400ms);
 }
 
 .seperation {

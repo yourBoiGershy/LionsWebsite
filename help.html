@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="static/images/7476LionsGold.png">
     <title>7476 EOM Lions</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="static/css/general.css">
     <link type="text/css" rel="stylesheet" href="static/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
-    <link type="text/css" rel="stylesheet" href="static/css/general.css">
-    <link type="text/css" rel="stylesheet" href="static/css/help.css">
     <link type="text/css" rel="stylesheet" href="static/css/modals.css">
+    <link type="text/css" rel="stylesheet" href="static/css/help.css">
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.css"  media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="static/css/bootstrap.css">
 </head>
 
 <body>
@@ -25,7 +29,7 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="index.html" class="yellow-text">Home</a></li>
-                        <li><a href="performance.html" class="yellow-text">Our performance</a></li>
+                        <li><a href="performance.html" class="yellow-text">Past Competitions</a></li>
                         <li class="active"><a class="yellow-text">How to Help</a></li>
                         <li><a href="#contact" class="yellow-text">Contact Us!</a></li>
                     </ul>
@@ -35,13 +39,13 @@
         <!--Mobile Navbar-->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="index.html">Home</a></li>
-            <li><a href="performance.html">Our performance</a></li>
+            <li><a href="performance.html">Past Competitions</a></li>
             <li><a>How to Help</a></li>
             <li><a href="#contact">Contact Us!</a></li>
         </ul>
         
         <div class="section">
-            <label class="body-text sponsors-text">Building a robot, and travelling to competitions is expensive, and would be impossible without the help of our amazing sponsors.</label>
+            <label class="body-text sponsors-text">Building a robot and travelling to competitions is expensive, and would be impossible without the help of our amazing sponsors.</label>
             <label class="body-text sponsors-text">If you would like to help our team this year and be part of our success, we would love to hear from you.</label>
             <a class="waves-effect waves-light btn blue lighten-1 contact-us" href="#contact">Contact Us!</a>
             <div class="section">
@@ -50,66 +54,68 @@
         </div>
 
         <!--Slideshow-->
-        <div class="carousel carousel-slider">
+        <div id="sponsorCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause=false data-interval=false data-touch=false>
             <div class="fixed-btn-wrapper center-align">
                 <a class="waves-effect waves-light btn modal-trigger carousel-fixed-btn yellow darken-2 pulse" href="#selected-package">What's in your package?</a>
             </div>
-            <div class="left valign-wrapper sliders">
-                <a id="left-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(-1), updateModals()"><i class="material-icons black-text">chevron_left</i></a>
-            </div>
-            <div class="right valign-wrapper sliders">
-                <a id="right-slider" class="btn-floating btn-large btn-sliders waves-effect waves-light N/A transparent" onclick="slide(1), updateModals()"><i class="material-icons black-text">chevron_right</i></a>
-            </div>
-            <div class="carousel-item select-disable center-align" data-index="0">
-                <img class="sponsors-image" src="static/images/Plat_Sponsors.jpg">
-                <div class="staggered-list center-staggered-list">
-                    <ul class="valign-wrapper">
-                        <div>
-                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Platinum Sponsors</p></div></li>
-                        </div>
-                        <div>
-                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$5000+</p></div></li>
-                        </div>
-                    </ul>
+            <div class="carousel-inner">
+                <div class="custom-left-button-wrapper">
+                    <a class="btn-floating btn-large waves-effect waves-light N/A transparent" href="#sponsorCarousel" data-slide="prev"><i class="material-icons">chevron_left</i></a>
                 </div>
-            </div>
-            <div class="carousel-item select-disable center-align" data-index="1">
-                <img class="sponsors-image" src="static/images/Gold_Sponsors.jpg">
-                <div class="staggered-list center-staggered-list">
-                    <ul class="valign-wrapper">
-                        <div>
-                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Gold Sponsors</p></div></li>
-                        </div>
-                        <div>
-                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$2500 - $4999</p></div></li>
-                        </div>
-                    </ul>
+                <div class="custom-right-button-wrapper">
+                    <a class="btn-floating btn-large waves-effect waves-light N/A transparent" href="#sponsorCarousel" data-slide="next"><i class="material-icons">chevron_right</i></a>
                 </div>
-            </div>
-            <div class="carousel-item select-disable center-align" data-index="2">
-                <img class="sponsors-image" src="static/images/Silver_Sponsors.jpg">
-                <div class="staggered-list center-staggered-list">
-                    <ul class="valign-wrapper">
-                        <div>
-                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Silver Sponsors</p></div></li>
-                        </div>
-                        <div>
-                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$1000 - $2499</p></div></li>
-                        </div>
-                    </ul>
+                <div class="carousel-item active">
+                    <img class="sponsors-image d-block w-100" src="static/images/Gold_Sponsors.jpg">
+                    <div class="staggered-list center-staggered-list">
+                        <ul class="valign-wrapper">
+                            <div>
+                                <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Gold Sponsors</p></div></li>
+                            </div>
+                            <div>
+                                <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$2500 - $4999</p></div></li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item select-disable center-align" data-index="3">
-                <img class="sponsors-image" src="static/images/Bronze_Sponsors.jpg">
-                <div class="staggered-list center-staggered-list">
-                    <ul class="valign-wrapper">
-                        <div>
-                            <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Bronze Sponsors</p></div></li>
-                        </div>
-                        <div>
-                            <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$500 - $999</p></div></li>
-                        </div>
-                    </ul>
+                <div class="carousel-item">
+                    <img class="sponsors-image d-block w-100" src="static/images/Silver_Sponsors.jpg">
+                    <div class="staggered-list center-staggered-list">
+                        <ul class="valign-wrapper">
+                            <div>
+                                <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Silver Sponsors</p></div></li>
+                            </div>
+                            <div>
+                                <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$1000 - $2499</p></div></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="sponsors-image d-block w-100" src="static/images/Bronze_Sponsors.jpg">
+                    <div class="staggered-list center-staggered-list">
+                        <ul class="valign-wrapper">
+                            <div>
+                                <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Bronze Sponsors</p></div></li>
+                            </div>
+                            <div>
+                                <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$500 - $999</p></div></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="sponsors-image" src="static/images/Plat_Sponsors.jpg">
+                    <div class="staggered-list center-staggered-list">
+                        <ul class="valign-wrapper">
+                            <div>
+                                <li class="caption-title"><div class="valign-wrapper text-wrapper"><p class="title-text">Platinum Sponsors</p></div></li>
+                            </div>
+                            <div>
+                                <li class="caption-subject"><div class="valign-wrapper text-wrapper"><p class="subject-text">$5000+</p></div></li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,14 +124,14 @@
     <!-- Modal Structures -->
     <div id="selected-package" class="modal package">
         <div class="modal-content">
-            <h4 class="header section-header green-text">Your Package(Plat)</h4>
+            <h4 class="header section-header green-text">Your Package (Plat)</h4>
             <div class="package-information">
-                <label class="point">Name and logo displayed on robot(X-Large)</label>
-                <label class="point">Name and logo on website</label>
-                <label class="point">Names on team merchandise(Large)</label>
-                <label class="point">Name included in team introduction</label>
-                <label class="point">Logo or name on Sponsor Board at competitions(Large)</label>
-                <label class="point">Advertised at outreach events and competitions</label>
+                <label class="point">- Name and logo displayed on robot (X-Large)</label>
+                <label class="point">- Name and logo on website</label>
+                <label class="point">- Names on team merchandise (Large)</label>
+                <label class="point">- Name included in team introduction</label>
+                <label class="point">- Logo or name on Sponsor Board at competitions (Large)</label>
+                <label class="point">- Advertised at outreach events and competitions</label>
             </div>
         </div>
         <div class="modal-footer">
@@ -134,13 +140,13 @@
     </div>
     <div id="package1" class="modal package">
         <div class="modal-content">
-            <h4 class="header section-header green-text">Your Package(Gold)</h4>
+            <h4 class="header section-header green-text">Your Package (Gold)</h4>
             <div class="package-information">
-                <label class="point">Name and logo displayed on robot(Large)</label>
-                <label class="point">Name and logo on website</label>
-                <label class="point">Names on team merchandise(Medium)</label>
-                <label class="point">Logo or name on Sponsor Board at competitions</label>
-                <label class="point">Advertised at outreach events</label>
+                <label class="point">- Name and logo displayed on robot (Large)</label>
+                <label class="point">- Name and logo on website</label>
+                <label class="point">- Names on team merchandise (Medium)</label>
+                <label class="point">- Logo or name on Sponsor Board at competitions</label>
+                <label class="point">- Advertised at outreach events</label>
             </div>
         </div>
         <div class="modal-footer">
@@ -149,11 +155,11 @@
     </div>
     <div id="package2" class="modal package">
         <div class="modal-content">
-            <h4 class="header section-header green-text">Your Package(Silver)</h4>
+            <h4 class="header section-header green-text">Your Package (Silver)</h4>
             <div class="package-information">
-                <label class="point">Name displayed on robot</label>
-                <label class="point">Logo on website</label>
-                <label class="point">Name on Sponsor Board at competitions</label>
+                <label class="point">- Name displayed on robot</label>
+                <label class="point">- Logo on website</label>
+                <label class="point">- Name on Sponsor Board at competitions</label>
             </div>
         </div>
         <div class="modal-footer">
@@ -162,10 +168,10 @@
     </div>
     <div id="package3" class="modal package">
         <div class="modal-content">
-            <h4 class="header section-header green-text">Your Package(Bronze)</h4>
+            <h4 class="header section-header green-text">Your Package (Bronze)</h4>
             <div class="package-information">
-                <label class="point">Name on website</label>
-                <label class="point">Name on Sponsor Board at competitions</label>
+                <label class="point">- Name on website</label>
+                <label class="point">- Name on Sponsor Board at competitions</label>
             </div>
         </div>
         <div class="modal-footer">
@@ -174,36 +180,49 @@
     </div>
     <footer class="page-footer" id="contact">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Contacts</h5>
-              <p class="grey-text text-lighten-4">Gmail</p>
-              <p class="grey-text text-lighten-4">Instagram</p>
-              <p class="grey-text text-lighten-4">Facebook</p>
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contacts</h5>
+                    <p class="grey-text text-lighten-4">Gmail</p>
+                    <p class="grey-text text-lighten-4">Instagram</p>
+                    <p class="grey-text text-lighten-4">Facebook</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <p><li><a class="footer-links waves-effect waves-light grey-text text-lighten-3" href="mailto:fredliu876@gmail.com?Subject=Contact%207476&Body=Hi EOM Lions!">eomlions@gmail.com</a></li></p>
+                        <p><li><a class="footer-links waves-effect waves-light grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/eomlions7476/">@eomlions7476</a></li></p>
+                        <p><li><a class="footer-links waves-effect waves-light grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/eom.lions.71">Eom Lions</a></li></p>
+                    </ul>
+                </div>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <p><li><a class="footer-links grey-text text-lighten-3" href="mailto:fredliu876@gmail.com?Subject=Contact%207476&Body=Hi EOM Lions!">eomlions@gmail.com</a></li></p>
-                <p><li><a class="footer-links grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/eomlions7476/">@eomlions7476</a></li></p>
-                <p><li><a class="footer-links grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/eom.lions.71">Eom Lions</a></li></p>
-              </ul>
-            </div>
-          </div>
         </div>
         <div class="footer-copyright">
-          <div class="container">
-          © 2020 
-          <a class="grey-text text-lighten-4 right" href="#!">7476 Eom Lions</a>
-          </div>
+            <div class="container">
+            © 2020 7476 EOM Lions
+            </div>
         </div>
-      </footer>
-    
+    </footer>
+
     <!--Scripts-->
-    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/materialize.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>
-    <script type="text/javascript" src="static/js/carouselScripts.js"></script>
     <script>
-        let numSlides = 4
+        /**
+         * Use new set of modals for a new slide
+         */
+        function updateModals() {
+            let allModals = document.querySelectorAll('.package')
+            for(let i = 0; i < allModals.length; i++) {
+                if(allModals[i].id == 'selected-package'){
+                    allModals[i].id = 'package' + i
+                } else if(i == slideIndex) {
+                    allModals[i].id = 'selected-package'
+                }
+            }
+        }
     </script>
+    <script type="text/javascript" src="static/js/bootstrap.js"></script>
 </body>
