@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="static/css/carousel.css">
     <link type="text/css" rel="stylesheet" href="static/css/modals.css">
     <link type="text/css" rel="stylesheet" href="static/css/help.css">
+    <link type="text/css" rel="stylesheet" href="static/css/collapsible.css">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.css"  media="screen,projection">
     <link type="text/css" rel="stylesheet" href="static/css/bootstrap.css">
 </head>
@@ -57,10 +58,10 @@
         <div class="section yellow dark-1">
             <h6 class="section-header">SPONSORSHIP LEVELS</h6>
         </div>
-        <ul class="collapsible popout sponsor-collapsible">
+        <ul class="collapsible popout sponsor-collapsible" style="display: inline;">
             <li>
-                <div class="collapsible-header green lighten-1 yellow-text"><i class="material-icons">keyboard_arrow_right</i>Platinum Sponsors ($5000+)</div>
-                <div class="collapsible-body center-align">
+                <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Platinum Sponsors ($5000+)</div>
+                <div class="collapsible-body">
                     <div class="valign-wrapper" style="overflow: auto;">
                         <ul class="left-align">
                             <li>- Name and logo displayed on robot (X-Large)</li>
@@ -75,8 +76,8 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header green lighten-1 yellow-text"><i class="material-icons">keyboard_arrow_right</i>Gold Sponsors ($2500 - $4999)</div>
-                <div class="collapsible-body center-align">
+                <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Gold Sponsors ($2500 - $4999)</div>
+                <div class="collapsible-body">
                     <div class="valign-wrapper" style="overflow: auto;">
                         <ul class="left-align">
                             <li>- Name and logo displayed on robot (Large)</li>
@@ -90,8 +91,8 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header green lighten-1 yellow-text"><i class="material-icons">keyboard_arrow_right</i>Silver Sponsors ($1000 - $2499)</div>
-                <div class="collapsible-body center-align">
+                <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Silver Sponsors ($1000 - $2499)</div>
+                <div class="collapsible-body">
                     <div class="valign-wrapper" style="overflow: auto;">
                         <ul class="left-align">
                             <li>- Name displayed on robot</li>
@@ -103,8 +104,8 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header green lighten-1 yellow-text"><i class="material-icons">keyboard_arrow_right</i>Bronze Sponsors ($500 - $999)</div>
-                <div class="collapsible-body center-align">
+                <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Bronze Sponsors ($500 - $999)</div>
+                <div class="collapsible-body">
                     <div class="valign-wrapper" style="overflow: auto;">
                         <ul class="left-align">
                             <li>- Name on website</li>
@@ -139,20 +140,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="static/js/materialize.js"></script>
     <script type="text/javascript" src="static/js/init.js"></script>
-    <script>
-        /**
-         * Use new set of modals for a new slide
-         */
-        function updateModals() {
-            let allModals = document.querySelectorAll('.package')
-            for(let i = 0; i < allModals.length; i++) {
-                if(allModals[i].id == 'selected-package'){
-                    allModals[i].id = 'package' + i
-                } else if(i == slideIndex) {
-                    allModals[i].id = 'selected-package'
-                }
-            }
-        }
-    </script>
     <script type="text/javascript" src="static/js/bootstrap.js"></script>
 </body>
