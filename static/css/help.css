@@ -13,17 +13,13 @@
     cursor: pointer;
 }
 
-.fixed-btn-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.sponsor-collapsible ul {
+    list-style-type: circle !important;
+    float: left;
+    width: 50%;
 }
 
-.carousel-fixed-btn {
-    top: 48%;
-    cursor: pointer;
-}
-
-.sponsors-image {
-    opacity: 0.6;
+.sponsor-collapsible ul li {
+    font-family: product-sans;
+    font-size: 1.25rem;
 }

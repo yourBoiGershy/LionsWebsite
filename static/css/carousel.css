@@ -110,14 +110,14 @@
 .caption-body {
     height: 8rem;
     max-width: 80%;
-    margin-top: 5rem;
+    margin-top: 3rem;
     --animation-order: 3;
     animation-name: animateInText;
     animation-delay: calc(var(--animation-order) * 400ms);
 }
 
 .seperation {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 

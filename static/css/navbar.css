@@ -22,3 +22,7 @@
     font-family: marcellus;
     cursor: pointer;
 }
+
+.sidenav {
+    z-index: 100000000 !important;
+}
