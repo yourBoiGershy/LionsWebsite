@@ -68,6 +68,10 @@
     top: 1rem !important;
 }
 
+.left-staggered-list {
+    left: 10%;
+}
+
 .text-wrapper {
     width: 100%;
     height: 100%;
@@ -110,7 +114,7 @@
 .caption-body {
     height: 8rem;
     max-width: 80%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     --animation-order: 3;
     animation-name: animateInText;
     animation-delay: calc(var(--animation-order) * 400ms);
