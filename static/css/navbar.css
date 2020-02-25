@@ -23,6 +23,18 @@
     cursor: pointer;
 }
 
+.navbar-fixed {
+    z-index: 100000000 !important;
+}
+
 .sidenav {
     z-index: 100000000 !important;
+}
+
+#contact-dropdown li:hover {
+    background-color: lightgreen !important;
+}
+
+#George {
+    margin-top: 11rem;
 }
